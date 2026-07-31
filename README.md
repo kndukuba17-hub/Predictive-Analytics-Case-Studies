@@ -1,4 +1,4 @@
-# 📚 Predictive Analytics — Case Studies
+# Predictive Analytics — Case Studies
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-RF%20%7C%20GBM-orange)
@@ -6,7 +6,7 @@
 
 Three compact, technique-focused predictive-analytics studies across **regression, classification, and time-series forecasting** — each framed around a real business problem.
 
-> **⚠️ Honest note on data:** these three studies run on **simulated datasets** generated in-notebook. They're here to demonstrate *modelling technique and business framing* across problem types, not to showcase real-data cleaning (see my [CLV](https://github.com/kndukuba17-hub/predictive-clv-engine), [Churn](https://github.com/kndukuba17-hub/Customer-Churn-Prediction) and [Recommender](https://github.com/kndukuba17-hub/B2C-Retail-Analytics-E-Commerce-Recommendation-Engine) projects for that). Metrics below are on simulated data and are illustrative. This repo consolidates three previously separate small projects into one tidy collection.
+> **Honest note on data:** these three studies run on **simulated datasets** generated in-notebook. They're here to demonstrate *modelling technique and business framing* across problem types, not to showcase real-data cleaning (see my [CLV](https://github.com/kndukuba17-hub/predictive-clv-engine), [Churn](https://github.com/kndukuba17-hub/Customer-Churn-Prediction) and [Recommender](https://github.com/kndukuba17-hub/B2C-Retail-Analytics-E-Commerce-Recommendation-Engine) projects for that). Metrics below are on simulated data and are illustrative. This repo consolidates three previously separate small projects into one tidy collection.
 
 ---
 
@@ -22,21 +22,21 @@ Three compact, technique-focused predictive-analytics studies across **regressio
 
 ---
 
-### 1️⃣ Insurance Premium Pricing (regression)
+### Insurance Premium Pricing (regression)
 Predicting individual medical costs from age, BMI, smoking status and dependents — the core of actuarial pricing. Demonstrates regression modelling and the non-linear compound effect of smoking × high BMI. → [details](insurance-premium-pricing/)
 
-### 2️⃣ Hospital Readmission Risk (classification)
+### Hospital Readmission Risk (classification)
 Flagging patients at risk of 30-day readmission from EHR-style features, to support discharge triage. Demonstrates classification with an emphasis on the readmit-class recall/precision trade-off. → [details](hospital-readmission/)
 
-### 3️⃣ Supply-Chain Demand Forecasting (time series)
+### Supply-Chain Demand Forecasting (time series)
 Forecasting daily product demand using **lag features, rolling windows, and a strict sequential train/test split** (no random shuffling of time-ordered data). → [details](supply-chain-forecasting/)
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 Python · pandas · NumPy · scikit-learn (Random Forest, Gradient Boosting) · Matplotlib · Seaborn
 
-## 🚀 How to Run
+## How to Run
 ```bash
 git clone https://github.com/kndukuba17-hub/Predictive-Analytics-Case-Studies.git
 cd Predictive-Analytics-Case-Studies
@@ -44,9 +44,3 @@ pip install -r requirements.txt
 jupyter notebook   # open any case-study folder's notebook
 ```
 Each notebook generates its own simulated data — no external download required.
-
----
-### 🎤 Interview talking points
-- *Regression:* why tree ensembles capture non-linear risk interactions (smoking × BMI) that linear actuarial models miss.
-- *Classification:* why readmit-class **recall** matters more than accuracy in a clinical triage setting.
-- *Time series:* why you must split time-ordered data **sequentially**, and how lag/rolling features encode seasonality.
